@@ -18,11 +18,11 @@ app.get('/', async (req, res) => {
 
   const names = rows.map(r => r.name).join(', ');
   res.send(`
-  Nafnalisti: ${names}
-  <form method="post" action="/post" enctype="application/x-www-form-urlencoded">
-    <input type="text" name="name">
-    <button>Senda</button>
-  </form>
+Nafnalisti: ${names}
+<form method="post" action="/post" enctype="application/x-www-form-urlencoded">
+  <input type="text" name="name">
+  <button>Senda</button>
+</form>
   `);
 });
 
